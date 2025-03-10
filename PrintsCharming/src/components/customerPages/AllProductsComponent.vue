@@ -10,10 +10,11 @@ import { ref } from 'vue';
 
 const text1 = ref('');
 const products = ref([])
+const filter = ref('')
 </script>
 
 <template>
-    <div class="flex flex-col justify-between items-center w-9/12 h-full">
+    <div class="flex flex-col justify-between items-center w-9/12 h-full pt-10 pb-10">
         <div class="w-1/2">
             <InputGroup>
                 <InputGroupAddon>
@@ -34,7 +35,7 @@ const products = ref([])
                         <RadioButtonGroup name="ingredient" class="flex flex-col gap-2 mt-2 mb-8">
                             <div class="flex items-center gap-2">
                                 <RadioButton inputId="cheese" value="Cheese" />
-                                <label for="cheese">Cheese</label>
+                                <label for="cheese">Laser Print</label>
                             </div>
                             <div class="flex items-center gap-2">
                                 <RadioButton inputId="mushroom" value="Mushroom" />
@@ -48,50 +49,46 @@ const products = ref([])
                                 <RadioButton inputId="onion" value="Onion" />
                                 <label for="onion">Onion</label>
                             </div>
-                        </RadioButtonGroup>
 
-                        <h3>Price</h3>
-                        <RadioButtonGroup name="ingredient" class="flex flex-col gap-2 mt-2 mb-8">
+                            <h3>Price</h3>
                             <div class="flex items-center gap-2">
-                                <RadioButton inputId="cheese" value="Cheese" />
-                                <label for="cheese">$</label>
+                                <RadioButton inputId="$" value="$" />
+                                <label for="$">$</label>
                             </div>
                             <div class="flex items-center gap-2">
-                                <RadioButton inputId="mushroom" value="Mushroom" />
-                                <label for="mushroom">$$</label>
+                                <RadioButton inputId="$$" value="$$" />
+                                <label for="$$">$$</label>
                             </div>
                             <div class="flex items-center gap-2">
-                                <RadioButton inputId="pepper" value="Pepper" />
-                                <label for="pepper">$$$</label>
+                                <RadioButton inputId="$$$" value="$$$" />
+                                <label for="$$$">$$$</label>
                             </div>
-                        </RadioButtonGroup>
 
-                        <h3>Rating</h3>
-                        <RadioButtonGroup name="ingredient" class="flex flex-col gap-2 mt-2 mb-8">
+                            <h3>Rating</h3>
                             <div class="flex items-center gap-2">
-                                <RadioButton inputId="cheese" value="Cheese" />
-                                <label for="cheese">
+                                <RadioButton inputId="1Star" value="1Star" />
+                                <label for="1Star">
                                     <i class="pi pi-star"></i>
                                 </label>
                             </div>
                             <div class="flex items-center gap-2">
-                                <RadioButton inputId="cheese" value="Cheese" />
-                                <label for="cheese">
-                                    <i class="pi pi-star"></i>
-                                    <i class="pi pi-star"></i>
-                                </label>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <RadioButton inputId="cheese" value="Cheese" />
-                                <label for="cheese">
-                                    <i class="pi pi-star"></i>
+                                <RadioButton inputId="2Star" value="2Star" />
+                                <label for="2Star">
                                     <i class="pi pi-star"></i>
                                     <i class="pi pi-star"></i>
                                 </label>
                             </div>
                             <div class="flex items-center gap-2">
-                                <RadioButton inputId="cheese" value="Cheese" />
-                                <label for="cheese">
+                                <RadioButton inputId="3Star" value="3Star" />
+                                <label for="3Star">
+                                    <i class="pi pi-star"></i>
+                                    <i class="pi pi-star"></i>
+                                    <i class="pi pi-star"></i>
+                                </label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <RadioButton inputId="4Star" value="4Star" />
+                                <label for="4Star">
                                     <i class="pi pi-star"></i>
                                     <i class="pi pi-star"></i>
                                     <i class="pi pi-star"></i>

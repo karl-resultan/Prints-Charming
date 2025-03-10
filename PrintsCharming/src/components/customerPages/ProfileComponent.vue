@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from 'vue';
+import Button from 'primevue/button';
 import Drawer from 'primevue/drawer';
 import Divider from 'primevue/divider';
-import Button from 'primevue/button';
 
 const visible = ref(false);
 
@@ -16,19 +16,12 @@ const navigate = () => {
 </script>
 
 <template>
-    <div class="flex flex-row justify-between w-full h-40 p-10 bg-gray-500">
+    <div class="flex flex-row justify-between">
         <div>
-            <h1>Teasd</h1>
+            
         </div>
-
         <div>
-            <h3>Test</h3>
-            <div></div>
-        </div>
 
-        <div>
-            <h3>Test</h3>
-            <div></div>
         </div>
     </div>
 </template>

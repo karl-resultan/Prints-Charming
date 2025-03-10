@@ -14,12 +14,10 @@ const showDrawer = () => {
 
 const changeView = (view) => {
     currentView.value = view;
-    emit('update:view', currentView);
+    emit('updateView', currentView.value);
+    showDrawer();
 }
 
-const navigate = () => {
-    
-}
 </script>
 
 <template>
