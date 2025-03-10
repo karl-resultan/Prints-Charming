@@ -14,11 +14,8 @@ const showDrawer = () => {
 
 const changeView = (view) => {
     currentView.value = view;
-    emit('update:view', currentView);
-}
-
-const navigate = () => {
-    
+    emit('updateView', currentView.value);
+    showDrawer()
 }
 </script>
 
@@ -39,9 +36,9 @@ const navigate = () => {
             <div class="flex flex-col gap-10 w-full h-6/12 p-2">
                 <!-- TODO: Make these buttons functional -->
                 <Button label="Products" icon="pi pi-bars" fluid @click="changeView('Products')" />
-                <Button label="My Cart" icon="pi pi-bars" fluid @click="changeView('My Cart')" /> 
+                <Button label="My Cart" icon="pi pi-bars" fluid @click="changeView('MyCart')" /> 
                 <Button label="Profile" icon="pi pi-bars" fluid @click="changeView('Profile')" />
-                <Button label="Sign Out" icon="pi pi-bars" fluid @click="changeView('Sign Out')" /> 
+                <Button label="Sign Out" icon="pi pi-bars" fluid @click="changeView('SignOut')" /> 
             </div>
         </Drawer>
     </div>
